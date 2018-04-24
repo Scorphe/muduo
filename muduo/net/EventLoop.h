@@ -1,3 +1,8 @@
+
+//事件循环，每个线程只能有一个eventloop实体。负责IO和定时器事件的分派。
+//用eventfd来异步唤醒，而不是pipe的方法。用TimerQueue作为计时器管理。
+//用poller作为IO multiplexing
+
 // Copyright 2010, Shuo Chen.  All rights reserved.
 // http://code.google.com/p/muduo/
 //
